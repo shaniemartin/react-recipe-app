@@ -3,7 +3,7 @@ import './recipe.styles.css';
 
 export class Recipe extends Component {
     render() {
-        const {title, imageUrl, instructions} = this.props;
+        const {title, imageUrl, instructions, id, onDelete} = this.props;
         const ingredients = this.props.ingredients.map((ingredient, index) => (
             <li key={index}>{ingredient}</li>
         ))
@@ -20,6 +20,7 @@ export class Recipe extends Component {
                     </ul>
                     <h4>Instructions</h4>
                     <p>{instructions}</p>
+                    <button type="button" onClick={() => onDelete(id)}>DELETE</button>
                 </div>
 
             </div>
