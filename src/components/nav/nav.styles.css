@@ -1,0 +1,24 @@
+
+.navbar {
+    background-color: #2fb174;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px; 
+    color: white;
+}
+
+.logo {
+    font-size: 1.3rem;
+}
+
+.links ul {
+    display: flex;
+    list-style: none;
+    font-size: 1rem;
+}
+
+.links ul li {
+    margin-left: 20px;
+    cursor: pointer;
+}
